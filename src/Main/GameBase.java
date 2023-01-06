@@ -32,20 +32,20 @@ public class GameBase {
     private JButton button2 = new JButton("Next");
     private JButton button3 = new JButton("Back");
     private JLabel condition = new JLabel("SALAH");
-    private int posXall[][] = {{130, 130, 130, 130, 130, 200, 270, 340, 410, 410, 410, 410, 410, 340, 270, 200},
+    private int posXall[][] = {{130, 130, 130, 130, 130, 200, 270, 340, 410, 410, 410, 410, 410, 340, 270, 200}, 
                                 {130, 130, 130, 130, 130, 200, 410, 340, 270, 410, 410, 410, 410, 340, 270, 200},
                                 {270, 130, 130, 130, 270, 200, 130, 340, 410, 410, 410, 410, 410, 340, 130, 200}};
     private int posYall[][] = {{100, 170, 240, 310, 380, 380, 380, 380, 380, 310, 240, 170, 100, 100, 100, 100},
-                                {240, 170, 100, 310, 380, 380, 380, 380, 380, 310, 100, 170, 240, 100, 100, 100},
-                                {100, 170, 240, 310, 380, 380, 380, 380, 380, 310, 240, 170, 100, 100, 100, 100}};
-    private JLabel jLabel1 = new JLabel("1");
+                               {240, 170, 100, 310, 380, 380, 380, 380, 380, 310, 100, 170, 240, 100, 100, 100},
+                               {100, 170, 240, 310, 380, 380, 380, 380, 380, 310, 240, 170, 100, 100, 100, 100}};
+    private JLabel jLabel1 = new JLabel("0");
     private JLabel jLabel2 = new JLabel("+");
     private JLabel jLabel3 = new JLabel("=");
     private JLabel jLabel4 = new JLabel("+");
-    private JLabel jLabel5 = new JLabel("-1");
+    private JLabel jLabel5 = new JLabel("0");
     private JLabel jLabel6 = new JLabel("=");
     private JLabel jLabel7 = new JLabel("+");
-    private JLabel jLabel8 = new JLabel("5");
+    private JLabel jLabel8 = new JLabel("0");
     private JLabel jLabel9 = new JLabel("=");
     private JLabel jLabel10 = new JLabel("+");
     private JLabel jLabel11 = new JLabel("=");
@@ -54,7 +54,7 @@ public class GameBase {
     private JTextField jTextField3 = new JTextField("0");
     private JTextField jTextField4 = new JTextField("0");
     private JTextField jTextField5 = new JTextField("0");
-    
+   
     public GameBase(int w, int h, MainMenu main) {
         this.width = w;
         this.height = h;
@@ -98,15 +98,11 @@ public class GameBase {
         jLabel1.setHorizontalAlignment(JLabel.CENTER);
         jLabel1.setVerticalAlignment(JLabel.CENTER);
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel1.setBackground(java.awt.Color.white);
-        jLabel1.setOpaque(true);
         
         jLabel2.setBounds(posXall[r][1], posYall[r][1], 50, 50);
         jLabel2.setHorizontalAlignment(JLabel.CENTER);
         jLabel2.setVerticalAlignment(JLabel.CENTER);
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel2.setBackground(java.awt.Color.white);
-        jLabel2.setOpaque(true);
         
         jTextField1.setPreferredSize(new Dimension(50,50));
         jTextField1.setBounds(posXall[r][2], posYall[r][2], 50, 50);
@@ -116,8 +112,6 @@ public class GameBase {
         jLabel3.setHorizontalAlignment(JLabel.CENTER);
         jLabel3.setVerticalAlignment(JLabel.CENTER);
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel3.setBackground(java.awt.Color.white);
-        jLabel3.setOpaque(true);
         
         jTextField2.setPreferredSize(new Dimension(50,50));
         jTextField2.setBounds(posXall[r][4], posYall[r][4], 50, 50);
@@ -127,22 +121,16 @@ public class GameBase {
         jLabel4.setHorizontalAlignment(JLabel.CENTER);
         jLabel4.setVerticalAlignment(JLabel.CENTER);
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel4.setBackground(java.awt.Color.white);
-        jLabel4.setOpaque(true);
         
         jLabel5.setBounds(posXall[r][6], posYall[r][6], 50, 50);
         jLabel5.setHorizontalAlignment(JLabel.CENTER);
         jLabel5.setVerticalAlignment(JLabel.CENTER);
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel5.setBackground(java.awt.Color.white);
-        jLabel5.setOpaque(true);
         
         jLabel6.setBounds(posXall[r][7], posYall[r][7], 50, 50);
         jLabel6.setHorizontalAlignment(JLabel.CENTER);
         jLabel6.setVerticalAlignment(JLabel.CENTER);
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel6.setBackground(java.awt.Color.white);
-        jLabel6.setOpaque(true);
         
         jTextField3.setPreferredSize(new Dimension(50,50));
         jTextField3.setBounds(posXall[r][8], posYall[r][8], 50, 50);
@@ -152,22 +140,16 @@ public class GameBase {
         jLabel7.setHorizontalAlignment(JLabel.CENTER);
         jLabel7.setVerticalAlignment(JLabel.CENTER);
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel7.setBackground(java.awt.Color.white);
-        jLabel7.setOpaque(true);
         
         jLabel8.setBounds(posXall[r][10], posYall[r][10], 50, 50);
         jLabel8.setHorizontalAlignment(JLabel.CENTER);
         jLabel8.setVerticalAlignment(JLabel.CENTER);
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel8.setBackground(java.awt.Color.white);
-        jLabel8.setOpaque(true);
         
         jLabel9.setBounds(posXall[r][11], posYall[r][11], 50, 50);
         jLabel9.setHorizontalAlignment(JLabel.CENTER);
         jLabel9.setVerticalAlignment(JLabel.CENTER);
         jLabel9.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel9.setBackground(java.awt.Color.white);
-        jLabel9.setOpaque(true);
         
         jTextField4.setPreferredSize(new Dimension(50,50));
         jTextField4.setBounds(posXall[r][12], posYall[r][12], 50, 50);
@@ -177,8 +159,6 @@ public class GameBase {
         jLabel10.setHorizontalAlignment(JLabel.CENTER);
         jLabel10.setVerticalAlignment(JLabel.CENTER);
         jLabel10.setFont(new java.awt.Font("Dialog", 1, 30));
-        jLabel10.setBackground(java.awt.Color.white);
-        jLabel10.setOpaque(true);
         
         jTextField5.setPreferredSize(new Dimension(50,50));
         jTextField5.setBounds(posXall[r][14], posYall[r][14], 50, 50);
@@ -188,62 +168,47 @@ public class GameBase {
         jLabel11.setHorizontalAlignment(JLabel.CENTER);
         jLabel11.setVerticalAlignment(JLabel.CENTER);
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 25));
-        jLabel11.setBackground(java.awt.Color.white);
-        jLabel11.setOpaque(true);
         
         button1.setBounds(240, 450, 120, 40);
         button1.setFont(new java.awt.Font("DM Sans", 1, 25));
         button1.setBackground(java.awt.Color.white);
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Integer a,b,c,d,e,f,g,h;
-                Integer hasil1 = 0, hasil2 = 0, hasil3 = 0, hasil4 = 0;
-                Integer temp=0;
+                int a,b,c,d,e,f,g,h;
+                int hasil1 = 0, hasil2 = 0, hasil3 = 0, hasil4 = 0;
 
                 switch (r) {
                     case 0:
                         a = Integer.parseInt(jLabel1.getText());
                         b = Integer.parseInt(jTextField1.getText());
                         c = Integer.parseInt(jTextField2.getText());
-                        
                         if(rn5 == 2){
-                            temp = a - b;
-                            hasil1 = temp;
+                            hasil1 = a - b;
                         }else if(rn5 == 1){
-                            temp = a + b;
-                            hasil1 = temp;
+                            hasil1 = a + b;
                         }
 
                         d = Integer.parseInt(jLabel5.getText());
                         e = Integer.parseInt(jTextField3.getText());
-                        
                         if(rn5 == 2){
-                            temp = c - d;
-                            hasil2 = temp;
+                            hasil2 = c - d;
                         }else if(rn5 == 1){
-                            temp = c + d;
-                            hasil2 = temp;
+                            hasil2 = c + d;
                         }
 
                         f = Integer.parseInt(jLabel8.getText());
                         g = Integer.parseInt(jTextField4.getText());
-                        
                         if(rn5 == 2){
-                            temp = e - f;
-                            hasil3 = temp;
+                            hasil3 = e - f;
                         }else if(rn5 == 1){
-                            temp = e + f;
-                            hasil3 = temp;
+                            hasil3 = e + f;
                         }
 
                         h = Integer.parseInt(jTextField5.getText());
-                        
                         if(rn5 == 2){
-                            temp = g - h;
-                            hasil4 = temp;
+                            hasil4 = g - h;
                         }else if(rn5 == 1){
-                            temp = g + h;
-                            hasil4 = temp;
+                            hasil4 = g + h;
                         }
 
                         if(hasil1 == c && hasil2 == e && hasil3 == g && hasil4 == a){
@@ -254,45 +219,33 @@ public class GameBase {
                         a = Integer.parseInt(jTextField1.getText());
                         b = Integer.parseInt(jLabel1.getText());
                         c = Integer.parseInt(jTextField2.getText());
-                        
                         if(rn5 == 2){
-                            temp = a - b;
-                            hasil1 = temp;
+                            hasil1 = a - b;
                         }else if(rn5 == 1){
-                            temp = a + b;
-                            hasil1 = temp;
+                            hasil1 = a + b;
                         }
 
                         d = Integer.parseInt(jTextField3.getText());
                         e = Integer.parseInt(jLabel5.getText());
-                        
                         if(rn5 == 2){
-                            temp = c - d;
-                            hasil2 = temp;
+                            hasil2 = c - d;
                         }else if(rn5 == 1){
-                            temp = c + d;
-                            hasil2 = temp;
+                            hasil2 = c + d;
                         }
 
                         f = Integer.parseInt(jTextField4.getText());
                         g = Integer.parseInt(jLabel8.getText());
-                        
                         if(rn5 == 2){
-                            temp = e - f;
-                            hasil3 = temp;
+                            hasil3 = e - f;
                         }else if(rn5 == 1){
-                            temp = e + f;
-                            hasil3 = temp;
+                            hasil3 = e + f;
                         }
 
                         h = Integer.parseInt(jTextField5.getText());
-                        
                         if(rn5 == 2){
-                            temp = g - h;
-                            hasil4 = temp;
+                            hasil4 = g - h;
                         }else if(rn5 == 1){
-                            temp = g + h;
-                            hasil4 = temp;
+                            hasil4 = g + h;
                         }
 
                         if(hasil1 == c && hasil2 == e && hasil3 == g && hasil4 == a){
@@ -303,45 +256,33 @@ public class GameBase {
                         a = Integer.parseInt(jTextField5.getText());
                         b = Integer.parseInt(jTextField1.getText());
                         c = Integer.parseInt(jLabel5.getText());
-                        
                         if(rn5 == 2){
-                            temp = a - b;
-                            hasil1 = temp;
+                            hasil1 = a - b;
                         }else if(rn5 == 1){
-                            temp = a + b;
-                            hasil1 = temp;
+                            hasil1 = a + b;
                         }
 
                         d = Integer.parseInt(jTextField2.getText());
                         e = Integer.parseInt(jTextField3.getText());
-                        
                         if(rn5 == 2){
-                            temp = c - d;
-                            hasil2 = temp;
+                            hasil2 = c - d;
                         }else if(rn5 == 1){
-                            temp = c + d;
-                            hasil2 = temp;
+                            hasil2 = c + d;
                         }
 
                         f = Integer.parseInt(jLabel8.getText());
                         g = Integer.parseInt(jTextField4.getText());
-                        
                         if(rn5 == 2){
-                            temp = e - f;
-                            hasil3 = temp;
+                            hasil3 = e - f;
                         }else if(rn5 == 1){
-                            temp = e + f;
-                            hasil3 = temp;
+                            hasil3 = e + f;
                         }
-
-                        h = Integer.parseInt(jLabel1.getText());
                         
+                        h = Integer.parseInt(jLabel1.getText());
                         if(rn5 == 2){
-                            temp = g - h;
-                            hasil4 = temp;
+                            hasil4 = g - h;
                         }else if(rn5 == 1){
-                            temp = g + h;
-                            hasil4 = temp;
+                            hasil4 = g + h;
                         }
 
                         if(hasil1 == c && hasil2 == e && hasil3 == g && hasil4 == a){
@@ -382,14 +323,20 @@ public class GameBase {
                     setCek(false);
                     Random r1 = new Random();
                     r = r1.nextInt(2);
-                    Random r5 = new Random();
-                    rn5 = r5.nextInt(4)+1;
                     Random r2 = new Random();
-                    rn2 = r2.nextInt(10)+1;
+                    int rn2 = r2.nextInt(10)+1;
                     Random r3 = new Random();
-                    rn3 = r3.nextInt(10)+1;
+                    int rn3 = r3.nextInt(10)+1;
                     Random r4 = new Random();
-                    rn4 = r4.nextInt(10)+1;
+                    int rn4 = r4.nextInt(10)+1;
+                    Random r5 = new Random();
+                    rn5 = r5.nextInt(2)+1;
+                    String num = Integer.toString(rn2);
+                    jLabel1.setText(num);
+                    num = Integer.toString(rn3);
+                    jLabel5.setText(num);
+                    num = Integer.toString(rn4);
+                    jLabel8.setText(num);
                     jTextField1.setText("0");
                     jTextField2.setText("0");
                     jTextField3.setText("0");
@@ -459,5 +406,6 @@ public class GameBase {
     public void setLevelCount(int levelCount) {
         this.levelCount = levelCount;
     }
-
+    
+    
 }
