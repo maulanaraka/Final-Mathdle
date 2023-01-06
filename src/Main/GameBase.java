@@ -17,16 +17,6 @@ public class GameBase {
     private int height;
     private int levelCount=0;
     private JLabel level = new JLabel("Level " + getLevelCount());
-    private Random r1 = new Random();
-    public int r = r1.nextInt(2);
-    private Random r2 = new Random();
-    public int rn2 = r2.nextInt(10)+1;
-    private Random r3 = new Random();
-    public int rn3 = r3.nextInt(10)+1;
-    private Random r4 = new Random();
-    public int rn4 = r4.nextInt(10)+1;
-    private Random r5 = new Random();
-    public int rn5 = r5.nextInt(2)+1;
     private boolean cek = false;
     private JButton button1 = new JButton("Submit");
     private JButton button2 = new JButton("Next");
@@ -62,6 +52,13 @@ public class GameBase {
     }
     
     public void setGUI(){
+
+        Random r1 = new Random();
+        int r = r1.nextInt(3);
+        int rn2 = r1.nextInt(10)+1;
+        int rn3 = r1.nextInt(10) + 1;
+        int rn4 = r1.nextInt(10) + 1;
+        int rn5 = r1.nextInt(2) + 1;
         
         String num = Integer.toString(rn2);
         jLabel1.setText(num);
@@ -321,16 +318,6 @@ public class GameBase {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                if(isCek()){
                     setCek(false);
-                    Random r1 = new Random();
-                    r = r1.nextInt(2);
-                    Random r2 = new Random();
-                    int rn2 = r2.nextInt(10)+1;
-                    Random r3 = new Random();
-                    int rn3 = r3.nextInt(10)+1;
-                    Random r4 = new Random();
-                    int rn4 = r4.nextInt(10)+1;
-                    Random r5 = new Random();
-                    rn5 = r5.nextInt(2)+1;
                     String num = Integer.toString(rn2);
                     jLabel1.setText(num);
                     num = Integer.toString(rn3);
